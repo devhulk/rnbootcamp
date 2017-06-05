@@ -10,3 +10,12 @@ To specify how the actions transform the state tree, you write pure reducers.
 
 [Redux Documentation](http://redux.js.org/)
 
+## Further Learning Materials
+Here I will post extra materials for learning that will help bring all up to speed on react-native and related components.
+
+# Pluralsight Classes
+
+[Pluralsight Playlist](https://app.pluralsight.com/channels/details/be2df1d0-787f-4b60-a6fe-12bb40ca9366)
+
+* Build IOS with ReactNative
+* Build Cross-Platform Apps with ReactNative and Redux

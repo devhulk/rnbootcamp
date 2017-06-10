@@ -36,6 +36,35 @@ These are examples of switches within vi that you can flip and have added functi
 Give you added functionality like having a file tree open next to your working file, or code completion.
 
 ### Instructions for Installing Plugins
-Plugins require some placement of different repositories in different folders so vi can have access to your config when you put certain commands in your .vimrc. To abstract this a little bit we use a plugin manager for vi called. [Vundle](https://github.com/VundleVim/Vundle.vim)
+Plugins require some placement of different repositories in different folders so vi can have access to your config when you put certain commands in your .vimrc. To abstract this a little bit we use a plugin manager for vi called [Vundle](https://github.com/VundleVim/Vundle.vim).
 
  Install this before proceeding. The first plugin we are going to install is ```nerdtree```.
+
+Once your finished folowing all the [Vundle](https://github.com/VundleVim/Vundle.vim) instructions. Do the following to get  [NERDTree](https://github.com/scrooloose/nerdtree) installed. 
+```
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+```
+in .vimrc
+```
+:let mapleader = "-"
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+
+
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
+
+autocmd vimenter * NERDTree
+aumd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+```
+Then run this in vi...
+```
+:PluginInstall
+```
+Now when you open vi NERDTree should open automatically. Now you can also toggle the tree by typing ```-n```.
+
+There are many plugins that you can look up and configure, this is just a common example, hope this gives you enough information to figure out how to customize your vi enviornment the way you want to!
+
+
+
+

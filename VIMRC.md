@@ -28,3 +28,12 @@ Within .vimrc...
 :syntax on
 :set mouse=a
 ```
+These are examples of switches within vi that you can flip and have added functionality. ```:syntax on``` gives you the ability to have text highlighting, and ```:set mouse=a``` gives you the ability to click around vi with your mouse for those times when using a mouse makes sense. What if we want to add functionality that isn't currently a part of vi? Well that brings us to our next section Vim Plugins.
+
+## Vim Plugins
+
+### Purpose
+Give you added functionality like having a file tree open next to your working file, or code completion.
+
+### Instructions for Installing Plugins
+Plugins require some placement of different repositories in different folders so vi can have access to your config when you put certain commands in your .vimrc. To abstract this a little bit we use a plugin manager for vi called [Vundle].(https://github.com/VundleVim/Vundle.vim). Install this before proceeding. The first plugin we are going to install is ```nerdtree```.

@@ -36,4 +36,6 @@ These are examples of switches within vi that you can flip and have added functi
 Give you added functionality like having a file tree open next to your working file, or code completion.
 
 ### Instructions for Installing Plugins
-Plugins require some placement of different repositories in different folders so vi can have access to your config when you put certain commands in your .vimrc. To abstract this a little bit we use a plugin manager for vi called [Vundle].(https://github.com/VundleVim/Vundle.vim). Install this before proceeding. The first plugin we are going to install is ```nerdtree```.
+Plugins require some placement of different repositories in different folders so vi can have access to your config when you put certain commands in your .vimrc. To abstract this a little bit we use a plugin manager for vi called. [Vundle](https://github.com/VundleVim/Vundle.vim)
+
+ Install this before proceeding. The first plugin we are going to install is ```nerdtree```.
